@@ -39,7 +39,7 @@ def changeroute(dollar, cents):
     return jsonify(result)
     
 
-@app.route('/1000/change/<dollar>/<cents>')
+@app.route('/100/change/<dollar>/<cents>')
 def change100route(dollar, cents):
     print(f"Make Change for {dollar}.{cents}")
     amount = f"{dollar}.{cents}"
